@@ -1,0 +1,16 @@
+<div id="board">
+    <div id="table">
+        <div class="column" id="rounds">
+            <div class="cell column-header">
+                <label for="rounds">Rounds:</label>
+                <input type="number" id="round-count" min="1" max="100" value="1" step="1" name="rounds" class="form-control">
+            </div>
+        </div>
+        {{#each data.players}}
+        <div class="column" id="{{this.name}}">
+            <div class="cell column-header">{{this.name}}</div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<button class="btn btn-primary" id="score">Score</button>

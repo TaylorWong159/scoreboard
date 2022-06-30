@@ -1,0 +1,125 @@
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+#board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--bs-white);
+    color: var(--bs-dark);
+    padding: 2rem;
+    width: 75%;
+    height: calc(90vh - 8rem);
+    box-shadow: rgba(0, 0, 0, 0.46) 0px 4px 20px 0px;
+    overflow-x: scroll;
+    overflow-y: auto;
+}
+
+#table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.cell {
+    border: var(--bs-dark) solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.5rem;
+    height: 6rem;
+    min-width: 9rem;
+    text-align: center;
+    background: var(--bs-white);
+    font-weight: bold;
+}
+
+.column-header {
+    border-top-width: 2px;
+    border-bottom-width: 2px
+}
+
+
+#rounds > .column-header {
+    display: flex;
+    flex-direction: column;
+}
+
+#round-count {
+    width: 5rem;
+    margin-left: 0.5rem;
+    text-align: center;
+}
+
+.name-input {
+    max-width: 10rem;
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background: var(--primary-gradient) !important;
+}
+
+.btn-primary:hover {
+    filter: brightness(120%) !important;
+}
+
+.score-input {
+    width: calc(100% - 2rem);
+    text-align: center;
+}
+
+.wizard-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.wizard-form > div {
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.wizard-form > div > label {
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.wizard-input {
+    width: 4rem;
+    text-align: center;
+}
+
+.btn-fail {
+    width: calc(100% - 2rem);
+}
+
+#score {
+    margin-top: 1rem;
+    font-size: 2rem;
+    width: 100%;
+    float: inline-start;
+    box-shadow: rgba(0, 0, 0, 0.46) 0px 4px 20px 0px;
+}

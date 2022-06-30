@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scoreboard</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fa/css/all.css">
+  <link rel="stylesheet" href="css/styles.css">
+  {{#each data.stylesheets}}
+  <link rel="stylesheet" href="css/{{this}}.css">
+  {{/each}}
+  <script src="fa/js/all.js" crossorigin="anonymous" defer></script>
+  <script src="js/jQuery.js" defer></script>
+  <script src="js/bootstrap.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  {{> header}}
+  {{{body}}}
+  {{> modal}}
+</body>
+</html>
