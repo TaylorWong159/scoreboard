@@ -54,11 +54,10 @@ body {
 #modal {
     padding: 3rem 1rem;
     width: 50%;
-    height: 50%;
     color: black;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .modal-title {

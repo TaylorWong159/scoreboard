@@ -19,7 +19,7 @@
     color: var(--bs-dark);
     padding: 2rem;
     width: 75%;
-    height: calc(90vh - 8rem);
+    height: calc(90vh - 10rem);
     box-shadow: rgba(0, 0, 0, 0.46) 0px 4px 20px 0px;
     overflow-x: scroll;
     overflow-y: auto;
